@@ -159,7 +159,7 @@ function App() {
           {notes.map(note => (
             <div
               key={note.id}
-              className={\`note-item \${selectedNote?.id === note.id ? 'selected' : ''}\`}
+              className={`note-item ${selectedNote?.id === note.id ? 'selected' : ''}`}
               onClick={() => selectNote(note)}
             >
               <div className="note-item-header">
